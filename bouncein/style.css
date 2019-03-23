@@ -1,0 +1,30 @@
+body{
+  background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.bounce{
+  animation-name: bouncein;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@keyframes bouncein {
+  0%{
+    font-size: 0rem;
+  }
+  250%,100%{
+    font-size: 4rem;
+    color: white;
+  }
+  75%{
+    font-size: 4.3rem;
+    color: orange;
+  }
+}
